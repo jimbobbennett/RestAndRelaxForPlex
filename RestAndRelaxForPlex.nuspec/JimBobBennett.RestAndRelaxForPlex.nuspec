@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package >
+  <metadata minClientVersion="2.7.2">
+    <id>JimBobBennett.RestAndRelaxForPlex</id>
+    <version>$version$</version>
+    <title>RestAndRelax Plex Media Server API</title>
+    <authors>Jim Bennett</authors>
+    <owners>Jim Bennett</owners>
+    <licenseUrl>https://github.com/jimbobbennett/RestAndRelaxForPlex/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/jimbobbennett/RestAndRelaxForPlex</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      An API for accessing Plex Media Servers and the connected clients.
+    </description>
+    <summary>Plex Media Server API</summary>
+    <tags>plex, api, pcl, windows phone, winphone, wp8, winrt, android, xamarin.forms, ios, monoandroid, monodroid, monotouch</tags>
+    <dependencies>
+      <group>
+        <dependency id="JimBobBennett.JimLib" version="1.1.86" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- portable -->
+    <file src="..\RestAndRelaxForPlex\bin\$Configuration$\JimBobBennett.RestAndRelaxForPlex.dll" target="lib\portable-net45+win+wp80+MonoAndroid10+MonoTouch1\JimBobBennett.RestAndRelaxForPlex.dll" />
+    <file src="..\RestAndRelaxForPlex\bin\$Configuration$\JimBobBennett.RestAndRelaxForPlex.pdb" target="lib\portable-net45+win+wp80+MonoAndroid10+MonoTouch1\JimBobBennett.RestAndRelaxForPlex.pdb" />
+    <file src="..\RestAndRelaxForPlex\**\*.cs" target="src\RestAndRelaxForPlex" />
+  </files>
+</package>

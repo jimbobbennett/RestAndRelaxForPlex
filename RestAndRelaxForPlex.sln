@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAndRelaxForPlex", "RestAndRelaxForPlex\RestAndRelaxForPlex.csproj", "{2AA4A96D-F1A0-4CBF-8B10-B8932DE6F60C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{38964548-0815-4167-AE2A-8DA45F97B5C1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CDDFECDF-10E7-4EDD-A861-8EA9834C1416} = {CDDFECDF-10E7-4EDD-A861-8EA9834C1416}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4B113BD1-A8AB-43B9-B301-CE6873D7A21A}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAndRelaxForPlex.nuspec", "RestAndRelaxForPlex.nuspec\RestAndRelaxForPlex.nuspec.csproj", "{CDDFECDF-10E7-4EDD-A861-8EA9834C1416}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2AA4A96D-F1A0-4CBF-8B10-B8932DE6F60C} = {2AA4A96D-F1A0-4CBF-8B10-B8932DE6F60C}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{93C62D15-85D5-465A-8D14-C489D7DCA427}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AA4A96D-F1A0-4CBF-8B10-B8932DE6F60C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AA4A96D-F1A0-4CBF-8B10-B8932DE6F60C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AA4A96D-F1A0-4CBF-8B10-B8932DE6F60C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AA4A96D-F1A0-4CBF-8B10-B8932DE6F60C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38964548-0815-4167-AE2A-8DA45F97B5C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38964548-0815-4167-AE2A-8DA45F97B5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38964548-0815-4167-AE2A-8DA45F97B5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38964548-0815-4167-AE2A-8DA45F97B5C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDDFECDF-10E7-4EDD-A861-8EA9834C1416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDFECDF-10E7-4EDD-A861-8EA9834C1416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDDFECDF-10E7-4EDD-A861-8EA9834C1416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDFECDF-10E7-4EDD-A861-8EA9834C1416}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
