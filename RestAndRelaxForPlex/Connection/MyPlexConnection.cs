@@ -63,9 +63,12 @@ namespace JimBobBennett.RestAndRelaxForPlex.Connection
 
                             try
                             {
+                                // fix for https://bugzilla.xamarin.com/show_bug.cgi?id=30869
+                                // create the authentication headers manually instead of using HttpClient
+                                // to fix an issue on iOS
                                 var user = AsyncHelper.RunSync(() => _restConnection.MakeRequestAsync<PlexUser, string>(Method.Post,
                                     ResponseType.Xml, PlexResources.MyPlexBaseUrl, PlexResources.MyPlexSignIn,
-                                    _username, _password, headers: PlexHeaders.CreatePlexRequest()));
+                                    headers: PlexHeaders.CreatePlexRequest(userName:_username, password:_password)));
 
                                 if (user.ResponseObject != null)
                                 {

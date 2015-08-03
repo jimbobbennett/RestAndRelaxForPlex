@@ -167,3 +167,6 @@ FakesAssemblies/
 *.nupkg
 *.DotSettings
 /BuildNugetPackage.ps1
+
+*.userprefs
+*.DS_Store
