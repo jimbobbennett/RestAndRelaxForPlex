@@ -1,6 +1,9 @@
 RestAndRelaxForPlex
 ==========
 
+[![Build status](https://ci.appveyor.com/api/projects/status/macq1wr1sv82yn85?svg=true)](https://ci.appveyor.com/project/jimbobbennett/restandrelaxforplex)
+
+
 Companion library for Plex to load details from a Plex media server
 
 So far this is a very early beta, just putting it out there to start garnering feedback.
