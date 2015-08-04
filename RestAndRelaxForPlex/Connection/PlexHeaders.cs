@@ -23,7 +23,7 @@ namespace JimBobBennett.RestAndRelaxForPlex.Connection
             if (!string.IsNullOrEmpty(userName) && !string.IsNullOrEmpty(password))
             {
                 var authBytes = Encoding.UTF8.GetBytes(userName + ":" + password);
-                headers.Add("Authorization", "BASIC " + Convert.ToBase64String(authBytes));
+                headers.Add("Authorization", "Basic " + Convert.ToBase64String(authBytes));
             }
 
             if (user != null)
