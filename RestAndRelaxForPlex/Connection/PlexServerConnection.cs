@@ -163,7 +163,6 @@ namespace JimBobBennett.RestAndRelaxForPlex.Connection
                 {
                     if (await TryConnectionAsync(connection.Uri))
                     {
-                        ConnectionUri = connection.Uri;
                         return;
                     }
                 }
@@ -224,6 +223,8 @@ namespace JimBobBennett.RestAndRelaxForPlex.Connection
                 MediaContainer = null;
                 return false;
             }
+
+            ConnectionUri = uri;
             
             if (MediaContainer == null)
             {
